@@ -12,7 +12,16 @@ int main()
 
     cpp.text = "C++";
     cpp.url = "https://www.cplusplus.com/";
+
     languages->set_at(1, cpp);
+
+    cpp.text = "C";
+    cpp.url = "https://en.cppreference.com/w/c/language";
+
+    languages->set_at(2, cpp);
+
+    languages->display_backward();
+    languages->display_forward();
 
     return 0;
 }
