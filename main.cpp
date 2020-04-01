@@ -51,15 +51,5 @@ int main()
     emoticons->display_backward();
     languages->display_forward();
 
-
-
-    cpp.text = "C";
-    cpp.url = "https://en.cppreference.com/w/c/language";
-
-    languages->set_at(2, cpp);
-
-    languages->display_backward();
-    languages->display_forward();
-
     return 0;
 }

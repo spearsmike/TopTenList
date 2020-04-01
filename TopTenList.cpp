@@ -14,6 +14,9 @@ TopTenList::TopTenList()
 void TopTenList::set_at(int index, Hyperlink link)
 {
     _list.insert(_list.begin()+index, link);
+    if(_list.capacity() > 10) {
+        _list.resize(10);
+    }
 }
 
 Hyperlink TopTenList::get(int index)
